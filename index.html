@@ -1,92 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Document</title>
-    <style>
-        @media (max-width: 1024px) {
-            #mobile-menu {
-                display: none;
-            }
-            #mobile-menu-button {
-                display: block;
-            }
-        }
-        @media (min-width: 1025px) {
-            #mobile-menu-button {
-                display: none;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mubashir Ali - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      background-color: #121212; /* dark background */
+    }
+  </style>
 </head>
-<body>
-  <div class="bg-white">
-    <header class="absolute inset-x-0 top-0 z-50">
-      <nav class="flex items-center justify-between p-6 lg:px-8 bg-gradient-to-tr from-cyan-700 to-blue-500" aria-label="Global">
-        <div class="flex lg:flex-1">
-          <a href="#" class="-m-1.5 p-1.5">
-            <span class="sr-only">Your Company</span>
-            <i class="fa fa-home text-white"></i>
-          </a>
-        </div>
-        <div class="hidden lg:flex lg:gap-x-12">
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">About</a>
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Skills</a>
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Education</a>
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Projects</a>
-        </div>
-        <div class="hidden lg:flex lg:flex-1 lg:justify-end gap-x-1">
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900 mx-2"><span aria-hidden="true"><i class="fa fa-github text-white"></i></span></a>
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900 mx-2"><span aria-hidden="true"><i class="fa fa-instagram text-white"></i></span></a>
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900 mx-2"><span aria-hidden="true"><i class="fa fa-linkedin text-white"></i></span></a>
-        </div>
-        <div id="mobile-menu-button" class="lg:hidden">
-          <button type="button" class="text-white" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
-            <i class="fa fa-bars"></i>
-          </button>
-        </div>
-      </nav>
-      <div id="mobile-menu" class="hidden bg-gradient-to-tr from-cyan-700 to-blue-500 p-6 lg:hidden">
-        <a href="#" class="block text-sm font-semibold leading-6 text-gray-900 mb-4">About</a>
-        <a href="#" class="block text-sm font-semibold leading-6 text-gray-900 mb-4">Skills</a>
-        <a href="#" class="block text-sm font-semibold leading-6 text-gray-900 mb-4">Education</a>
-        <a href="#" class="block text-sm font-semibold leading-6 text-gray-900 mb-4">Projects</a>
-        <div class="flex justify-end gap-x-1">
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900 mx-2"><span aria-hidden="true"><i class="fa fa-github text-white"></i></span></a>
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900 mx-2"><span aria-hidden="true"><i class="fa fa-instagram text-white"></i></span></a>
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900 mx-2"><span aria-hidden="true"><i class="fa fa-linkedin text-white"></i></span></a>
-        </div>
+<body class="text-white">
+  <!-- Navbar -->
+  <nav class="bg-gray-800 p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="text-2xl font-bold">
+        Mubashir Ali
       </div>
-    </header>
-    
-    <div class="relative isolate px-6 pt-14 lg:px-8">
-      <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
-        <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+      <div class="hidden md:flex space-x-4">
+        <a href="#" class="hover:text-green-500">Home</a>
+        <a href="#" class="hover:text-green-500">About</a>
+        <a href="#" class="hover:text-green-500">Resume</a>
+        <a href="#" class="hover:text-green-500">Services</a>
+        <a href="#" class="hover:text-green-500">Portfolio</a>
+        <a href="#" class="hover:text-green-500">Contact</a>
       </div>
-      <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-        <div class="text-center">
-          <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Hello I'm Mubashir Ali</h1>
-          <p class="mt-6 text-lg leading-8 text-gray-600">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
-          <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-x-6 gap-y-4 sm:gap-y-0">
-            <a href="#" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Hire Me</a>
-            <a href="cv.pdf" class="rounded-md bg-gray-900 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">Download CV</a>
-          </div>
-        </div>
-      </div>
-      <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
-        <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+      <div class="md:hidden">
+        <button id="menu-button" class="focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
       </div>
     </div>
-  </div>
+    <div id="mobile-menu" class="hidden md:hidden">
+      <a href="#" class="block px-4 py-2 hover:bg-gray-700">Home</a>
+      <a href="#" class="block px-4 py-2 hover:bg-gray-700">About</a>
+      <a href="#" class="block px-4 py-2 hover:bg-gray-700">Resume</a>
+      <a href="#" class="block px-4 py-2 hover:bg-gray-700">Services</a>
+      <a href="#" class="block px-4 py-2 hover:bg-gray-700">Portfolio</a>
+      <a href="#" class="block px-4 py-2 hover:bg-gray-700">Contact</a>
+    </div>
+  </nav>
 
+  <!-- Home Section -->
+  <section class="flex items-center justify-center h-screen">
+    <div class="text-center">
+      <h1 class="text-4xl md:text-6xl font-bold">Mubashir Ali</h1>
+      <p class="text-xl md:text-2xl mt-4">I'm a passionate <span class="text-green-500">Website Developer</span> from Pakistan</p>
+      <div class="mt-8 flex justify-center space-x-4">
+        <a href="#" class="inline-block p-4 bg-gray-700 hover:bg-gray-600 rounded-full">
+          <i class="fa fa-facebook fa-2x"></i>
+        </a>
+        <a href="#" class="inline-block p-4 bg-gray-700 hover:bg-gray-600 rounded-full">
+          <i class="fa fa-instagram fa-2x"></i>
+        </a>
+        <a href="#" class="inline-block p-4 bg-gray-700 hover:bg-gray-600 rounded-full">
+          <i class="fa fa-linkedin fa-2x"></i>
+        </a>
+        <a href="#" class="inline-block p-4 bg-gray-700 hover:bg-gray-600 rounded-full">
+          <i class="fa fa-github fa-2x"></i>
+        </a>
+        <a href="#" class="inline-block p-4 bg-gray-700 hover:bg-gray-600 rounded-full">
+          <i class="fa fa-skype fa-2x"></i>
+        </a>
+        <a href="#" class="inline-block p-4 bg-gray-700 hover:bg-gray-600 rounded-full">
+          <i class="fa fa-twitter fa-2x"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+  
   <script>
-      function toggleMobileMenu() {
-        const menu = document.getElementById('mobile-menu');
-        menu.classList.toggle('hidden');
-    }
+    document.getElementById('menu-button').addEventListener('click', function() {
+      var menu = document.getElementById('mobile-menu');
+      if (menu.classList.contains('hidden')) {
+        menu.classList.remove('hidden');
+      } else {
+        menu.classList.add('hidden');
+      }
+    });
   </script>
 </body>
 </html>
