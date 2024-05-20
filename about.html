@@ -8,7 +8,38 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="bg-[#05062e] text-white">
-  <!-- Section -->
+  <nav class="bg-[#02033d] p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="text-xl font-bold">
+        Mubashir Ali
+      </div>
+      <div class="hidden md:flex space-x-4">
+        <a href="index.html" class="hover:text-green-500">Home</a>
+        <!--a href="about.html" class="hover:text-green-500">About</!--a-->
+        <a href="#" class="hover:text-green-500">Resume</a>
+        <a href="#" class="hover:text-green-500">Services</a>
+        <a href="project.html" class="hover:text-green-500">Projects</a>
+        <a href="#" class="hover:text-green-500">Contact</a>
+      </div>
+      <div class="md:hidden">
+        <button id="menu-button" class="focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden">
+      <a href="index.html" class="block px-4 py-2 hover:bg-gray-700">Home</a>
+      <!--a href="#" class="block px-4 py-2 hover:bg-gray-700">About</-a-->
+      <a href="#" class="block px-4 py-2 hover:bg-gray-700">Resume</a>
+      <a href="#" class="block px-4 py-2 hover:bg-gray-700">Services</a>
+      <a href="#" class="block px-4 py-2 hover:bg-gray-700">Projects</a>
+      <a href="#" class="block px-4 py-2 hover:bg-gray-700">Contact</a>
+    </div>
+  </nav>
+
+
   <section class="min-h-screen flex items-center justify-center px-4 py-12">
     <div class="container mx-auto flex flex-col lg:flex-row items-center">
       <div class="lg:w-1/2 lg:pr-12">
@@ -57,6 +88,6 @@
       </div>
     </div>
   </section>
-  
+  <script src="script.js"></script>
 </body>
 </html>
