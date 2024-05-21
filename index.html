@@ -12,33 +12,18 @@
         .fixed-bottom-bar {
             position: fixed;
             bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 90%; /* Reduced width */
+            width: 100%;
             background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
-            border-radius: 15px; /* Added rounded corners */
             z-index: 10; /* Ensure it is above other elements */
         }
         .social-icons {
-            position: absolute;
-            left: 1rem; /* Adjust the left position to align with the image */
             top: 65%; /* Adjust this value to move the icons lower */
-        }
-        @media (min-width: 768px) {
-            .social-icons {
-                left: 1.5rem; /* Adjust the left position for medium devices and up */
-            }
-        }
-        @media (min-width: 1024px) {
-            .social-icons {
-                left: 2rem; /* Adjust the left position for large devices and up */
-            }
         }
     </style>
 </head>
 <body class="bg-gray-900 text-white">
     <div class="flex flex-col items-center justify-center min-h-screen p-4 relative">
-        <div class="social-icons transform -translate-y-1/2">
+        <div class="absolute social-icons left-4 md:left-6 lg:left-8 transform -translate-y-1/2">
             <ul class="space-y-4">
                 <li><a href="#" class="text-orange-500"><i class="fab fa-linkedin text-blue-400"></i></a></li>
                 <li><a href="#" class="text-orange-500"><i class="fab fa-instagram"></i></a></li>
