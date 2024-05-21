@@ -6,8 +6,19 @@
   <title>Services Section</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "Qu1_z0rAa6vQSffqg",
+      });
+   })();
+</script>
+<script src="script.js"></script>
 </head>
-<body class=" text-white">
+<body class="text-white">
   <!-- Navbar -->
   <nav class="bg-[#02041f] p-4">
     <div class="container mx-auto flex justify-between items-center">
@@ -21,7 +32,6 @@
         <a href="education.html" class="hover:text-green-500">Education</a>
         <a href="#" class="hover:text-green-500">Services</a>
         <a href="project.html" class="hover:text-green-500">Projects</a>
-        <!--a href="contact.html" class="hover:text-green-500">Contact</a-->
       </div>
       <div class="md:hidden">
         <button id="menu-button" class="focus:outline-none">
@@ -42,7 +52,22 @@
   </nav>
 
   <!-- Education Section -->
-  <section class="px-4 py-12 bg-gradient-to-r from-[#010524] to-[#040c5c]">
+  <section class="px-4 p-20 bg-gradient-to-r from-[#010524] to-[#040c5c]">
+    <form id="contact-form" class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg space-y-4">
+      <div>
+        <label for="name" class="block text-gray-700">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-black">
+      </div>
+      <div>
+        <label for="email" class="block text-gray-700">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="example23@gmail.com" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-black">
+      </div>
+      <div>
+        <label for="message" class="block text-gray-700">Your Message</label>
+        <textarea id="message" name="message" placeholder="Type here" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"></textarea>
+      </div>
+      <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600">Send</button>
+    </form>
   </section>
 
   <script>
