@@ -7,15 +7,12 @@ document.getElementById('menu-button').addEventListener('click', function() {
     }
   });
 
+  function senndMail (){
+    let parms = {
+      name : document.getElementById("name").value,
+      email : document.getElementById("email").value,
+      subject :document.getElementById("message").value,
+    }
   
-  document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    emailjs.sendForm('service_o8zn1tz', 'template_uciluog', this) 
-      .then(function(response) {
-        console.log('Email sent!', response.status, response.text);
-        alert('Email sent successfully!');
-      }, function(error) {
-        console.error('Error sending email:', error);
-        alert('Oops! Something went wrong.');
-      });
-  });
+    emailjs.send("service_qua4djz","template_ly95juk",parms).then(alert("Email Sent!!"))
+  }
