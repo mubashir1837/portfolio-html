@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Services Section</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
-<body class=" text-white">
+<body class="text-white">
   <!-- Navbar -->
   <nav class="bg-[#02041f] p-4">
     <div class="container mx-auto flex justify-between items-center">
@@ -19,7 +19,7 @@
         <a href="about.html" class="hover:text-green-500">About</a>
         <a href="skills.html" class="hover:text-green-500">Skills</a>
         <a href="education.html" class="hover:text-green-500">Education</a>
-        <!--a href="#" class="hover:text-green-500">Services</!--a-->
+        <!--a href="#" class="hover:text-green-500">Services</a-->
         <a href="project.html" class="hover:text-green-500">Projects</a>
         <a href="contact.html" class="hover:text-green-500">Contact</a>
       </div>
@@ -32,57 +32,56 @@
       </div>
     </div>
     <div id="mobile-menu" class="hidden md:hidden">
-      <a href="#" class="block px-4 py-2 hover:bg-gray-700">Home</a>
-      <a href="#" class="block px-4 py-2 hover:bg-gray-700">About</a>
-      <a href="#" class="block px-4 py-2 hover:bg-gray-700">Resume</a>
-      <a href="#" class="block px-4 py-2 hover:bg-gray-700">Services</a>
-      <a href="#" class="block px-4 py-2 hover:bg-gray-700">Projects</a>
-      <a href="#" class="block px-4 py-2 hover:bg-gray-700">Contact</a>
+      <a href="index.html" class="block px-4 py-2 hover:bg-gray-700">Home</a>
+      <a href="about.html" class="block px-4 py-2 hover:bg-gray-700">About</a>
+      <a href="skills.html" class="block px-4 py-2 hover:bg-gray-700">Skills</a>
+      <!--a href="services.html" class="block px-4 py-2 hover:bg-gray-700">Services</a-->
+      <a href="project.html" class="block px-4 py-2 hover:bg-gray-700">Projects</a>
+      <a href="contact.html" class="block px-4 py-2 hover:bg-gray-700">Contact</a>
     </div>
   </nav>
 
-  <!-- Services Section -->
   <section class="px-4 py-12 bg-gradient-to-r from-[#010524] to-[#040c5c]">
     <div class="container mx-auto">
-      <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 text-center  text-transparent bg-clip-text bg-gradient-to-r from-[#19e345] to-[#fff]">
+      <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 text-center text-transparent bg-clip-text bg-gradient-to-r from-[#19e345] to-[#fff]">
         Services
       </h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Service 1 -->
-        <div class="bg-gray-800 p-6 rounded-lg text-center">
-          <img src="img/front.png" alt="Front End" class="mx-auto mb-4 w-[24%] h-auto">
+        
+        <div class="bg-[#02041f] p-6 rounded-lg text-center">
+          <i class="fas fa-desktop fa-5x mx-auto mb-4 text-green-500"></i>
           <h3 class="text-2xl font-bold mb-2">Front End</h3>
           <p class="text-gray-400">Create Front-End Website Design User Requirement.</p>
         </div>
-        <!-- Service 2 -->
-        <div class="bg-gray-800 p-6 rounded-lg text-center">
-          <img src="img/bootstrap.png" alt="Bootstrap" class="mx-auto mb-4 w-[50%] h-auto ">
+        
+        <div class="bg-[#02041f] p-6 rounded-lg text-center">
+          <i class="fab fa-bootstrap fa-5x mx-auto mb-4 text-green-500"></i>
           <h3 class="text-2xl font-bold mb-2">Bootstrap</h3>
           <p class="text-gray-400">Create Friendly and Full Responsive Design with latest version of Bootstrap.</p>
         </div>
-        <!-- Service 3 -->
-        <div class="bg-gray-800 p-6 rounded-lg text-center">
-          <img src="img/javascript.png" alt="Java Script" class="mx-auto mb-4 w-[28%] h-auto">
-          <h3 class="text-2xl font-bold mb-2">Java Script</h3>
-          <p class="text-gray-400">Front-End use Java Script for Create user's Friendly and Attractive Design.</p>
+      
+        <div class="bg-[#02041f] p-6 rounded-lg text-center">
+          <i class="fab fa-js fa-5x mx-auto mb-4 text-green-500"></i>
+          <h3 class="text-2xl font-bold mb-2">JavaScript</h3>
+          <p class="text-gray-400">Front-End use JavaScript to Create user-friendly and Attractive Design.</p>
         </div>
-        <!-- Service 4 -->
-        <div class="bg-gray-800 p-6 rounded-lg text-center">
-          <img src="https://via.placeholder.com/50" alt="Python" class="mx-auto mb-4">
+        
+        <div class="bg-[#02041f] p-6 rounded-lg text-center">
+          <i class="fab fa-python fa-5x mx-auto mb-4 text-green-500"></i>
           <h3 class="text-2xl font-bold mb-2">Python</h3>
-          <p class="text-gray-400">Create web applications through deep learning using tensor flow, pytorch and pycharm etc.</p>
+          <p class="text-gray-400">Create web applications through deep learning using TensorFlow, PyTorch, and PyCharm.</p>
         </div>
-        <!-- Service 5 -->
-        <div class="bg-gray-800 p-6 rounded-lg text-center">
-          <img src="https://via.placeholder.com/50" alt="Laravel" class="mx-auto mb-4">
-          <h3 class="text-2xl font-bold mb-2">Laravel</h3>
-          <p class="text-gray-400">Designed Website convert in Dynamic Website use php framework Laravel latest version.</p>
+        
+        <div class="bg-[#02041f] p-6 rounded-lg text-center">
+          <i class="fab fa-html5 fa-5x mx-auto mb-4 text-green-500"></i>
+          <h3 class="text-2xl font-bold mb-2">HTML</h3>
+          <p class="text-gray-400">I can make responsive websites using tailwindcss and bootstrap with HTML.</p>
         </div>
-        <!-- Service 6 -->
-        <div class="bg-gray-800 p-6 rounded-lg text-center">
-          <img src="https://via.placeholder.com/50" alt="CodeIgniter" class="mx-auto mb-4">
-          <h3 class="text-2xl font-bold mb-2">CodeIgniter</h3>
-          <p class="text-gray-400">Php framework CodeIgniter latest version use for website Back-End.</p>
+    
+        <div class="bg-[#02041f] p-6 rounded-lg text-center">
+          <i class="fas fa-brain fa-5x mx-auto mb-4 text-green-500"></i>
+          <h3 class="text-2xl font-bold mb-2">Deep Learning</h3>
+          <p class="text-gray-400">Created diffrent apps using deep learning and frame works like NumPy, BioPython and Scipy.</p>
         </div>
       </div>
     </div>
