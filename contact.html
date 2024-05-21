@@ -7,14 +7,13 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("4zv41pCsC2rOX1Z8a");
-   })();
-</script>
-<script src="script.js"></script>
+          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+     (function(){
+        emailjs.init("4zv41pCsC2rOX1Z8a"); 
+     })();
+  </script>
 </head>
 <body class="text-white">
   <!-- Navbar -->
@@ -45,11 +44,10 @@
       <a href="skills.html" class="block px-4 py-2 hover:bg-gray-700">Skills</a>
       <a href="services.html" class="block px-4 py-2 hover:bg-gray-700">Services</a>
       <a href="project.html" class="block px-4 py-2 hover:bg-gray-700">Projects</a>
-      <!--a href="" class="block px-4 py-2 hover:bg-gray-700">Contact</!--a-->
     </div>
   </nav>
 
-  <!-- Education Section -->
+  <!-- Contact Section -->
   <section class="px-4 p-20 bg-gradient-to-r from-[#010524] to-[#040c5c]">
     <form id="contact-form" class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg space-y-4">
       <div>
@@ -67,5 +65,6 @@
       <button type="submit" onclick="sendMail()" class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600">Send</button>
     </form>
   </section>
+  <script src="script.js"></script>
 </body>
 </html>
