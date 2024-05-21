@@ -8,7 +8,7 @@ document.getElementById("menu-button").addEventListener("click", function () {
 });
 
 function sendMail() {
-  event.preventDefault(); // Prevent the form from submitting the default way
+  event.preventDefault();
   emailjs
     .sendForm(
       "service_qua4djz",
