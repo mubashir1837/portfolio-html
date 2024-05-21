@@ -16,11 +16,14 @@
             background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
             z-index: 10; /* Ensure it is above other elements */
         }
+        .social-icons {
+            top: 65%; /* Adjust this value to move the icons lower */
+        }
     </style>
 </head>
 <body class="bg-gray-900 text-white">
     <div class="flex flex-col items-center justify-center min-h-screen p-4 relative">
-        <div class="absolute top-1/2 left-4 md:left-6 lg:left-8 transform -translate-y-1/2">
+        <div class="absolute social-icons left-4 md:left-6 lg:left-8 transform -translate-y-1/2">
             <ul class="space-y-4">
                 <li><a href="#" class="text-orange-500"><i class="fab fa-linkedin text-blue-400"></i></a></li>
                 <li><a href="#" class="text-orange-500"><i class="fab fa-instagram"></i></a></li>
@@ -37,19 +40,19 @@
                 <img src="img/prof.jpg" alt="Mubashir Odho" class="rounded-lg mx-auto shadow-lg" style="width: 200px; height: auto;">
             </div>
             <div class="w-full md:w-2/3 p-4">
-                <div class="flex flex-col sm:flex-row justify-around mb-8 space-y-4 sm:space-y-0">
-                    <div class="text-center p-4 bg-gray-800 rounded-lg shadow-lg" style="width: 150px; height: 150px;">
+                <div class="flex flex-wrap justify-around mb-8 space-y-4 sm:space-y-0">
+                    <div class="text-center p-4 bg-gray-800 rounded-lg shadow-lg m-2" style="width: 150px; height: 150px;">
                         <i class="fas fa-award text-orange-500 text-3xl mb-2"></i>
                         <div class="text-lg font-bold">Experience</div>
                         <div class="text-lg">3+ Years</div>
                         <div class="text-sm">Working</div>
                     </div>
-                    <div class="text-center p-4 bg-gray-800 rounded-lg shadow-lg" style="width: 150px; height: 150px;">
+                    <div class="text-center p-4 bg-gray-800 rounded-lg shadow-lg m-2" style="width: 150px; height: 150px;">
                         <i class="fas fa-certificate text-orange-500 text-3xl mb-2"></i>
                         <div class="text-lg font-bold">Certificates</div>
                         <div class="text-lg">7+</div>
                     </div>
-                    <div class="text-center p-4 bg-gray-800 rounded-lg shadow-lg" style="width: 150px; height: 150px;">
+                    <div class="text-center p-4 bg-gray-800 rounded-lg shadow-lg m-2" style="width: 150px; height: 150px;">
                         <i class="fas fa-folder-open text-orange-500 text-3xl mb-2"></i>
                         <div class="text-lg font-bold">Projects</div>
                         <div class="text-lg">200+ projects</div>
