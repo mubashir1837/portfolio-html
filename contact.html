@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,9 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <link rel="stylesheet" href="input.css">
 </head>
+
 <body class="text-white bg-gradient-to-r from-[#010524] to-[#040c5c]">
 
   <nav class="bg-[#02041f] p-4">
@@ -65,7 +68,17 @@
       emailjs.init("4zv41pCsC2rOX1Z8a");
     })();
   </script>
-
+  <script>
+    document.getElementById("menu-button").addEventListener("click", function () {
+      var menu = document.getElementById("mobile-menu");
+      if (menu.classList.contains("hidden")) {
+        menu.classList.remove("hidden");
+      } else {
+        menu.classList.add("hidden");
+      }
+    });
+  </script>
   <script src="script.js"></script>
 </body>
+
 </html>
