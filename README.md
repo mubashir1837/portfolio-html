@@ -5,7 +5,7 @@ Welcome to my portfolio website! This website showcases my projects, skills,  pr
 <div align="center">
   <br />
     <a href="https://mubashir-a.vercel.app" target="_blank">
-      <img src="./img/portfolioo.PNG" alt="Project Banner">
+      <img src="./img/porfolio.gif" alt="Project Banner">
     </a>
   <br />
 
