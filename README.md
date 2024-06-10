@@ -1,12 +1,18 @@
-# Mubashir Ali's Portfolio Website
+# PORTFOLIO WEBSITE
 
 Welcome to my portfolio website! This website showcases my projects, skills,  projects and experience  as a designer and developer.
+
+<div align="center">
+  <br />
+    <a href="https://mubashir-a.vercel.app" target="_blank">
+      <img src="./img/portfolioo.PNG" alt="Project Banner">
+    </a>
+  <br />
 
 ## About Me
 I am Mubashir Ali, a passionate designer and developer with a keen interest in creating user-centered digital experiences.
 
-## Portfolio
-You can view my portfolio website [here](https://mubashir-ali.vercel.app).
+
 
 ## Connect with Me
 - **GitHub**: [mubashir1837](http://github.com/mubashir1837/)
@@ -18,7 +24,7 @@ If you'd like to contribute to my portfolio website, you can follow these steps:
 1. **Fork** the repository.
 2. **Clone** the forked repository to your local machine:
     ```
-    git clone https://github.com/mubashir1837/space-portfolio.git
+    git clone https://github.com/mubashir1837/portfolio-html
     ```
 3. Make your changes and enhancements.
 4. **Commit** your changes:
