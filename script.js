@@ -18,7 +18,7 @@ function sendMail(event) {
     reply_to: form.email.value
   };
 
-  emailjs.send("service_qua4djz", "template_ly95juk", templateParams)
+  emailjs.send("service_fobr664", "template_ef0nja3", templateParams)
     .then(
       function(response) {
         console.log("SUCCESS!", response.status, response.text);
