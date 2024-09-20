@@ -1,5 +1,5 @@
 document.getElementById("menu-button").addEventListener("click", function () {
-  var menu = document.getElementById("mobile-menu");
+  let menu = document.getElementById("mobile-menu");
   if (menu.classList.contains("hidden")) {
     menu.classList.remove("hidden");
   } else {
@@ -9,16 +9,16 @@ document.getElementById("menu-button").addEventListener("click", function () {
 
 function sendMail(event) {
   event.preventDefault(); 
-  var form = document.getElementById('form');
+  let form = document.getElementById('form');
   
-  var templateParams = {
+  let templateParams = {
     from_name: form.name.value,
     from_email: form.email.value,
     message: form.message.value,
     reply_to: form.email.value
   };
 
-  emailjs.send("service_fobr664", "template_ef0nja3", templateParams)
+  emailjs.send("service_o8zn1tz", "template_r30h3b7", templateParams)
     .then(
       function(response) {
         console.log("SUCCESS!", response.status, response.text);
